@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ЗАДАНИЕ 1</title>
+    <meta name="robots" content="noindex">
+</head>
+
+<body>
+    <h1 id="about">ЗАДАНИЕ 1</h1>
+    
+    <p>
+        <a href="http://kubsu.ru/">
+            Гиперссылка на сайт университета
+        </a>
+    </p>
+
+    <p>
+        <a href="https://kubsu.ru">
+            HTTPS Включительно
+        </a>
+    </p>
+
+    <p>
+        <a href="https://kubsu.ru/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOpEQ4lOvyVM1LorQJuHcJ-AAFWgqjTJRG4e6DmFfwWJjmfTXHae_DXOY&s=10" alt="КубГУ">
+</a>
+    </p>
+    <ul>
+    <li>
+    <p>
+        <a href="about.html">
+            Ссылка на внутреннюю страницу
+        </a>
+    </p></li>
+
+    <li><p>
+        <a href="index.html">
+            Ссылка на главную страницу
+        </a>
+    </p></li>
+
+    <li><p>
+        <a href="#about">
+            Ссылка на id (вверх) 
+        </a>
+    </p></li>
+
+    <li><p>
+        <a href="about.html?name=Vsevolod&age=18&group=10122">
+    Ссылка с тремя параметрами
+        </a>
+    </p></li>
+
+    <li><p>
+        <a href="about.html?id=123">Открыть</a>
+    </p></li>
+
+    <li><p>
+        <a href="about.html">Перейти на about</a>
+    </p></li>
+
+    <li><p>
+        <a href="about/page.html">Страница в каталоге about</a>
+    </p></li>
+
+    <li><p>
+        <a href="../page2.html">Страница на каталог выше</a>
+    </p></li>
+
+    <li><p>
+        <a href="../../page3.html">Страница на 2 каталога выше</a>
+    </p></li>
+
+    <li><p>
+    Я учусь в <a href="https://kubsu.ru/">Кубанском государственном университете</a>
+    на первом курсе
+    </p></li>
+
+    <li><p>
+        <a href="https://kubsu.ru/#about">Фрагумент страницы стороннего сайта</a>
+    </p></li>
+    
+    </ul>
+    <p>
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-picture-of-a-blue-bird-on-a-black-background-image_2937385.jpg" usemap="#maap" alt="Картинка">
+        <map name="maap">
+            <area shape="rect" coords="0,0,200,200" href="https://kubsu.ru/" alt="КубГУ">
+            <area shape="circle" coords="300,100,50" href="https://google.com/" alt="Google">
+        </map>
+    </p>
+
+    <p>
+        <a href="">Пустой href</a>
+    </p>
+
+    <p>
+        <a>https://kubsu.ru</a>
+    </p>
+
+    <p>
+        <a href="https://kubsu.ru/" rel="nofollow">
+        Ссылка запрещённая для поисковиков
+        </a>
+    </p>
+
+    <p>
+        Страница запрещённая для индексации
+    </p>
+
+    <ol>
+    <li>
+        <a href="https://kubsu.ru/" title="Официальный сайт КубГУ">
+            КубГУ
+        </a>
+    </li>
+
+    <li>
+        <a href="https://google.com/" title="гугл">
+            Google
+        </a>
+    </li>
+
+    <li>
+        <a href="about.html" title="внутренняя страница сайта">
+            About
+        </a>
+    </li>
+    </ol>
+
+    <a href="ftp://user:password@adress.com/file.txt">
+    FTP-ссылка с авторизацией
+    </a>
+
+    <br><br><br>
+
+
+
+    <form action="#" method="post">
+
+    <label>
+        ФИО:
+        <input type="text" name="fullname">
+    </label>
+
+    <br>
+
+    <label>
+        Телефон:
+        <input type="tel" name="phone">
+    </label>
+
+    <br>
+
+    <label>
+        e-mail:
+        <input type="email" name="email">
+    </label>
+
+    <br>
+
+    <label>
+        Дата рождения:
+        <input type="date" name="birthdate">
+    </label>
+
+    <br>
+
+    <p>пол:</p>
+
+    <label>
+        <input type="radio" name="gender" value="male">
+        мужской
+    </label>
+
+    <label>
+        <input type="radio" name="gender" value="female">
+        женский
+    </label>
+
+    <br>
+
+    <label>
+        Любимый язык программирования:
+        <select name="languages[]" multiple>
+            <option value="Pascal">Pascal</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="PHP">PHP</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Haskel">Haskel</option>
+            <option value="Clojure">Clojure</option>
+            <option value="Prolog">Prolog</option>
+            <option value="Scala">Scala</option>
+        </select>
+    </label>
+
+    <br>
+    <label>
+        Биография:
+        <br>
+        <textarea name="biography" rows="5" cols="40"></textarea>
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="contract">
+        С контрактом ознакомлен(а)
+    </label>
+
+    <br>
+    <button type="submit">Сохранить</button>
+
+</form>
+
+
+</body>
+</html>
